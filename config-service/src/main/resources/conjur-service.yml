@@ -1,0 +1,10 @@
+conjur:
+  account: devsecops
+  appliance-url: https://conjur.demo.cybr:3000/api
+  cert-file: /Users/Badr.NassLahsen/conjur-server.pem
+  authn-login: host/data/bnl/ocp-apps/demo-app-api-key
+  authn-api-key: 2a30jp68nthgfvr5g801atr4bv1j80aqmvf0ask11hxxev2ehasz6
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
