@@ -1,5 +1,6 @@
 package com.cyberark.conjur.plugintest;
 
+import com.cyberark.conjur.springboot.annotations.ConjurValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,11 +16,9 @@ public class ConjurSpringCloudPluginTest implements CommandLineRunner{
 
 
 	@Value("${data/bnl/ocp-apps/url}")
-	//@ConjurValue(key="data/bnl/ocp-apps/url")
 	private byte[] url;
 	
-	@Value("${data/bnl/ocp-apps/username}")
-	//@ConjurValue(key ="data/bnl/ocp-apps/username")
+	@ConjurValue(key ="data/bnl/ocp-apps/username")
 	private byte[] username;
 
 
@@ -32,7 +31,7 @@ public class ConjurSpringCloudPluginTest implements CommandLineRunner{
 
     
 	public void run(String... args) {
-		logger.info("By Using Standard Spring annotation -->  " + new String(username) + "  " );
+		logger.info("By Using ConjurValue Spring annotation -->  " + new String(username) + "  " );
 		logger.info("By Using Standard Spring annotation -->  " + new String(url) + "  " );
 		logger.info("By Using Standard Spring annotation -->  " + new String(password) + "  " );
 	}
