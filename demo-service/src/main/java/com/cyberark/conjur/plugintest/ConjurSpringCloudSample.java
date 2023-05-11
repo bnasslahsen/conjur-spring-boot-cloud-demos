@@ -11,8 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class ConjurSpringCloudPluginTest implements CommandLineRunner{
-	private static Logger logger = LoggerFactory.getLogger(ConjurSpringCloudPluginTest.class);
+public class ConjurSpringCloudSample implements CommandLineRunner{
+	
+	private static final Logger logger = LoggerFactory.getLogger(ConjurSpringCloudSample.class);
 
 
 	@Value("${data/bnl/ocp-apps/url}")
@@ -26,14 +27,14 @@ public class ConjurSpringCloudPluginTest implements CommandLineRunner{
 	private byte[] password;
 	
     public static void main(String[] args) {
-        SpringApplication.run(ConjurSpringCloudPluginTest.class, args);
+        SpringApplication.run(ConjurSpringCloudSample.class, args);
     }
 
     
 	public void run(String... args) {
-		logger.info("By Using ConjurValue Spring annotation -->  " + new String(username) + "  " );
-		logger.info("By Using Standard Spring annotation -->  " + new String(url) + "  " );
-		logger.info("By Using Standard Spring annotation -->  " + new String(password) + "  " );
+		logger.info("By Using ConjurValue Spring annotation -->  " + new String(username));
+		logger.info("By Using Standard Spring annotation -->  " + new String(url));
+		logger.info("By Using Standard Spring annotation -->  " + new String(password));
 	}
 
 	
