@@ -10,9 +10,6 @@
 	<artifactId>demo-service</artifactId>
 	<name>demo-service</name>
 
-	<properties>
-		<conjur-sdk-springboot.version>0.0.1-SNAPSHOT</conjur-sdk-springboot.version>
-	</properties>
 	
 	<dependencies>
 		<dependency>
