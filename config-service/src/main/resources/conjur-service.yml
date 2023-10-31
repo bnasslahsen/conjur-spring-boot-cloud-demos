@@ -1,6 +1,6 @@
 conjur:
-  account: devsecops
-  appliance-url: https://conjur.demo.cybr:3000/api
+  account: cybrlab
+  appliance-url: https://ec2-52-16-43-136.eu-west-1.compute.amazonaws.com/api
   cert-file: /Users/Badr.NassLahsen/conjur-server.pem
   authn-login: host/data/bnl/ocp-apps/demo-app-api-key
-  authn-api-key: 38bnf2m154vcn190231w12kc0rb2ncw31t3c5e7jj1pf2y003vzcawn
+  authn-api-key: 15k1bxc3pmxe2k1yhcv4d1wzt2ky276b5tx5jfjb23cjvcqe1yr6cyd
